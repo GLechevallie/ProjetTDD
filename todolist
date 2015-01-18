@@ -1,10 +1,15 @@
 $5 + 10 CHF = $10 if rate is 2:1
-Done : $5 * 2 = $10
-Done : Make "amount" private
-Done : Dollar side effects?
+DONE : $5 * 2 = $10
+DONE : Make "amount" private
+DONE : Dollar side effects?
 Money rounding?
-Done : equals()
-Done : hashcode()
+DONE : equals()
+
+hashcode()
 Equal null
 Equal object
-5 CHF * 2 = 10 CHF
+DONE : 5 CHF * 2 = 10 CHF
+Dollar/Franc duplication
+DONE : Common equals
+Common times
+Compare Francs with Dollars
