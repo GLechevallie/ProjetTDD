@@ -4,14 +4,13 @@ DONE : Make "amount" private
 DONE : Dollar side effects?
 Money rounding?
 DONE : equals()
-
 hashcode()
 Equal null
 Equal object
 DONE : 5 CHF * 2 = 10 CHF
-Dollar/Franc duplication
+DONE : Dollar/Franc duplication
 DONE : Common equals
-Common times
+DONE : Common times
 DONE : Compare Francs with Dollars
 DONE : Currency?
-Delete testFrancMultiplication?
+DONE : Delete testFrancMultiplication?
