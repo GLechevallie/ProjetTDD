@@ -1,9 +1,10 @@
 $5 + 10 CHF = $10 if rate is 2:1
 Done : $5 * 2 = $10
-Make "amount" private
+Done : Make "amount" private
 Done : Dollar side effects?
 Money rounding?
-equals()
+Done : equals()
 Done : hashcode()
 Equal null
 Equal object
+5 CHF * 2 = 10 CHF
