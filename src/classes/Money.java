@@ -4,7 +4,8 @@ package classes;
 /**
  * Created by Guillaume on 18/01/2015.
  */
-abstract class Money {
+
+public class Money {
 
     protected int amount;
     
@@ -23,17 +24,23 @@ abstract class Money {
         return new Franc(amount, "CHF");
     }
     
-    String currency(){
+    public String currency(){
         return currency;
-        
     }
     
     public boolean equals(Object object){
         Money money = (Money) object;
-        return amount == money.amount && getClass().equals(money.getClass());
+        return amount == money.amount && currency.equals(money.currency);
     }
     
-    abstract Money times(int multiplier){
-        return new Money(amount * multiplier);
+    public Money times(int multiplier){
+        return new Money(amount*multiplier, currency);
     }
+    
+    public String toString(){
+        return amount + " " + currency;
+        
+    }
+
+
 }

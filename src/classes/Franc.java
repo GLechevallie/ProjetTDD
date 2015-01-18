@@ -11,12 +11,12 @@ public class Franc extends Money {
         super(amount, currency);
     }
     
-    String currency(){
+    public String currency(){
         return currency;
     }
 
     public Money times(int multiplier){
-        return Money.franc(amount*multiplier);
+        return new Money(amount*multiplier, currency);
     }
 
     public boolean equals(Object object){
