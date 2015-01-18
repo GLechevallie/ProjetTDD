@@ -5,5 +5,5 @@ package classes;
  */
 public interface Expression {
     
-
+    Money reduce(String to);
 }

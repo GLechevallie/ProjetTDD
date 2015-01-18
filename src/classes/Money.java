@@ -8,7 +8,6 @@ package classes;
 public class Money implements Expression {
 
     protected int amount;
-    
     protected String currency;
 
     public Money (int amount, String currency){
@@ -30,7 +29,7 @@ public class Money implements Expression {
     
     public boolean equals(Object object){
         Money money = (Money) object;
-        return amount == money.amount && currency.equals(money.currency);
+        return (amount == money.amount) && currency.equals(money.currency);
     }
     
     public Money times(int multiplier){
@@ -39,10 +38,13 @@ public class Money implements Expression {
     
     public String toString(){
         return amount + " " + currency;
-        
     }
 
     Expression plus(Money addend){
-        return new Money(amount + addend.amount, currency);
+        return new Sum(this, addend);
+    }
+    
+    public Money reduce(String to){
+        return this;
     }
 }
