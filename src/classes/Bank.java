@@ -23,6 +23,6 @@ public class Bank {
     
     void addRate(String from, String to, int rate){
         rates.put(new Pair(from, to), new Integer(rate));
-        System.out.println(rates.get(new Pair(from, to))); // Problème ici : la hashtable s'initialise mal. Pourquoi ?
+        System.out.println("MàJ de la hastable : " + rates.get(new Pair(from, to)) + " " + from + " = 1 " + to); // Problème ici : la hashtable s'initialise mal. Pourquoi ?
     }
 }
