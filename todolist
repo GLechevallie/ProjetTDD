@@ -4,7 +4,7 @@ Return money from $5 + $5
 DONE : Bank.reduce(Money)
 Reduce money with conversion
 DONE : Reduce(Bank,String)
-Sum.plus
+DONE : Sum.plus
 Expression.times
 DONE : $5 * 2 = $10
 DONE : Make "amount" private
